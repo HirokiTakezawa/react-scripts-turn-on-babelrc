@@ -352,7 +352,7 @@ module.exports = function(webpackEnv) {
                   'babel-preset-react-app/webpack-overrides'
                 ),
                 // @remove-on-eject-begin
-                babelrc: false,
+                babelrc: true,
                 configFile: false,
                 presets: [require.resolve('babel-preset-react-app')],
                 // Make sure we have a unique cache identifier, erring on the
@@ -400,7 +400,7 @@ module.exports = function(webpackEnv) {
               exclude: /@babel(?:\/|\\{1,2})runtime/,
               loader: require.resolve('babel-loader'),
               options: {
-                babelrc: false,
+                babelrc: true,
                 configFile: false,
                 compact: false,
                 presets: [
